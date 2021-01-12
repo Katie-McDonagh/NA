@@ -1,5 +1,4 @@
-$(function work() {
-  var elem = document.getElementById('app');
-  elem = "howdy"
-})
-
+function work() {
+  var elem = document.getElementById("app");
+  console.log(elem);
+}
