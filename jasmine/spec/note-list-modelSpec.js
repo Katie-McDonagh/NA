@@ -12,6 +12,6 @@ describe("NoteList", function () {
   it("it creates and stores a note with a given text property", function () {
     var noteList1 = new NoteList();
     noteList1.createNote("My first note!");
-    expect(noteList1.notesArray[0].text).toEqual("My first note!");
+    expect(noteList1.notesArray[0].displayNote()).toEqual("My first note!");
   });
 });
