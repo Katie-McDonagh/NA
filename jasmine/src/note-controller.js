@@ -4,8 +4,10 @@ class NoteController {
     this.noteListView = new NoteListView(noteListModel);
     this.noteListModel = noteListModel;
   }
-  work() {
+
+  changeHTML() {
+    var toAdd = this.noteListView.generateHTML();
     var elem = document.getElementById("app");
-    elem.innerHTML = "howdy";
+    elem.innerHTML = toAdd;
   }
 }
