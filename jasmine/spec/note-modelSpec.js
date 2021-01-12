@@ -11,4 +11,10 @@ describe("Note", function() {
     expect(note1.text).toEqual("I'm a note");
   });
 
+  it ("Returns a note", function(){
+    var note1 = new Note("I'm a note")
+
+    expect(note1.displayNote()).toEqual("I'm a note");
+  });
+
 });
