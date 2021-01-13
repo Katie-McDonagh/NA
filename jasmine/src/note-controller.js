@@ -1,6 +1,6 @@
 class NoteController {
   constructor(noteList) {
-    
-    this.noteList = 
+    noteList.createNote("Favourite drink: Selzer");
+    this.noteListView = new NoteListView(noteList);
   }
 }
